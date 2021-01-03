@@ -55,7 +55,7 @@ jobs:
         git add .
         git commit -m "update new refresh_token" -a
     - name: Pull
-      uses: ad-m/github-pull-action
+      uses: ad-m/github-pull-action@all
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
