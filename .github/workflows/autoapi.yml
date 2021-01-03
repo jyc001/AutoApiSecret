@@ -22,9 +22,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Set up Python #安装python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@
       with:
         python-version: 3.8
+    - name: Pull
+      run: git pull origin master
+      
     - name: Install requests #安装requests
       run: |
         pip install requests
