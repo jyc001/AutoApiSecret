@@ -26,7 +26,7 @@ jobs:
       with:
         python-version: 3.8
     - name: Pull
-      run: git pull origin master
+      run: git pull origin/master
       
     - name: Install requests #安装requests
       run: |
