@@ -24,7 +24,7 @@ def gettoken(refresh_token):
           'client_secret':secret,
           'redirect_uri':'https://jyc001.github.io/GetAutoApiToken/'
          }
-    html = req.post('https://login.microsoftonline.com/common/oauth2/v2.0/token',json=data,headers=headers)
+    html = req.post('https://login.microsoftonline.com/common/oauth2/v2.0/token',data=data,headers=headers)
     with open("time.log","w+") as f:
         f.write(html.text)
     jsontxt = json.loads(html.text)
